@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Die : MonoBehaviour
 {
+    // A static Die
     public static Die inst;
 
     // Array of dice sides sprites to load from Resources folder
@@ -42,7 +43,7 @@ public class Die : MonoBehaviour
         // before final side appears. 20 itterations here.
         for (int i = 0; i <= 20; i++)
         {
-            // Pick up random value from 0 to 6 (All inclusive)
+            // Pick up random value from 0 to 6
             randomDiceSide = Random.Range(0, 6);
 
             // Set sprite to upper face of dice from array according to random value
